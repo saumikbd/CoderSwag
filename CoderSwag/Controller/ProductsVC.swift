@@ -20,6 +20,7 @@ class ProductsVC: UIViewController,UICollectionViewDataSource, UICollectionViewD
     }
     func initProducts(category: Category){
        Products = DataService.instance.getProducts(forCategoryTitle: category.title)
+        navigationItem.title = category.title
     }
     
     
